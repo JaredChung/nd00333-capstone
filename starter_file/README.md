@@ -9,14 +9,12 @@ This purpose of this project is to build a model using the Azure Machine Learnin
 
 *A company which is active in Big Data and Data Science wants to hire data scientists among people who successfully pass some courses which conduct by the company. Many people signup for their training. Company wants to know which of these candidates are really wants to work for the company after training or looking for a new employment because **it helps to reduce the cost and time as well as the quality of training or planning the courses and categorization of candidates**. Information related to demographics, education, experience are in hands from candidates signup and enrollment.*
 
-https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists
-
-
-
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
 The Dataset that will be used in this project is the HR job change data for Data Scientist.  Refer to below link for data source and additional information.
+
+https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists
 
 The main Objective is to Predict the probability of a candidate will work for the company.
 
@@ -135,7 +133,7 @@ hyperdrive_config = HyperDriveConfig(estimator = est,
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
-Improvements
+Future Improvements with Model
 
 * Extend the number of parameter search for both **C** and **max_iter**
 * Change the model to ElasticNet which is essentially blend of Ridge and Lasso based logisitic regression models
@@ -176,11 +174,7 @@ The model is successfully deployed as a web service and a REST endpoint is creat
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+https://youtu.be/iLXH80CiqKU
 
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Future Improvements
+* 
