@@ -144,8 +144,6 @@ Future Improvements with Model
 
 ## Model Deployment
 
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
-
 The AutoMl model was chosen to be deployed as it had the highest accuracy. The model is deployed using Azure Container Instance as a WebService. 
 
 Using the score.py file provided to the InferenceConfig and setting the **Cpu_cores** and **memory_gb** to be initialized as 1 for the deployment configuration. This is the compute instance to process the prediction
@@ -168,18 +166,24 @@ You can see the logs from the service by running service.get_logs()
 
 ![autodeploymentlogs_f](screenshots/autodeploymentlogs_f.png)
 
-Finally we can then delete the Service as we no longer need it and we can easily deploy it later
+**Endpoint Deployed Successfully**
 
-![service_delete](screenshots/service_delete.png)
+![endpoint](screenshots/endpoint.png)
+
+We can also additional monitoring capabilities with Azure Machine Learning. This is achieved by activating the **Application Insights** into within notebook by running the command "service.update(enable_app_insights=**True**)". 
+
+![applicationinsightenable](screenshots/applicationinsightenable.png)
+
+Now that the Application Insights is activated this provides additional monitoring measures such as checking failed requests as well as determining if the compute needs to be increased if we find an increase in activity as shown below.
+
+![applicationinsight_dashboard](screenshots/applicationinsight_dashboard.png)
+
+Finally we can then delete the Service as we no longer need it and we can easily deploy it later.
 
 ![service_delete_f](screenshots/service_delete_f.png)
 
-![automldeploymenthealthy_f](screenshots/automldeploymenthealthy_f.png)
-
-
-
 ## Screen Recording
-https://youtu.be/iLXH80CiqKU
+https://youtu.be/-__4fma7U_I
 
 ## Future Improvements
 * Running longer Automl models (e.g 15 mins -> 1-2 hour) will produce more models and potenially I higher performing model
