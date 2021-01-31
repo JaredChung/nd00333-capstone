@@ -154,9 +154,11 @@ The aci service is then created using workspace, aci service name, model, infere
 
 The model is successfully deployed as a web service and a REST endpoint is created with status Healthy. A scoring uri is also generated to test the endpoint.
 
-The first way to test the model endpoint is to execute **endpoint.py** file which passes in two examples and as shown below produces an output of both 0.0.
+The first way to test the model endpoint is to execute **endpoint.py** file. Essentially the way this works is by using the requests library in python to take JSON input and posting this request into the **scoring_uri** which is provided once you deploy the model. As you can see in below example which passes in two examples and as shown below produces an output of both 0.0.
 
 ![automldeployment_f](screenshots/automldeployment_f.png)
+
+![endpoint_screenshot](screenshots/endpoint_screenshot.png)
 
 The second way to test the endpoint is to pass data directly into the service. This can be acheived by taking a sample from data loaded into pandas. Then converting this into a JSON format to the be import directly into the service as shown below.
 
